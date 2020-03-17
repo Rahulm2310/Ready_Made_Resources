@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #383838;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.content a {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0.671);
+  color: rgba(0, 0, 0, 0.76);
+  font-weight: 600;
+}
+
+.sliderText {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.sliderText h3 {
+  color: white;
+  font-size: 3em;
+}
+
+.swiper-slide {
+  width: 400px;
+}
+
+.swiper-slide:nth-child(1) .sliderText {
+  background: #2196f3;
+}
+
+.swiper-slide:nth-child(2) .sliderText {
+  background: #df38df;
+}
+
+.swiper-slide:nth-child(3) .sliderText {
+  background: #3eb658;
+}
+
+.swiper-slide:nth-child(4) .sliderText {
+  background: #f3214f;
+}
+
+.swiper-slide:nth-child(5) .sliderText {
+  background: #f1a20f;
+}
+
+.swiper-slide:nth-child(6) .sliderText {
+  background: #8810a0;
+}

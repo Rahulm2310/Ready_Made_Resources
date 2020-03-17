@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="swiper.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="sliderText">
+              <h3>Slide One</h3>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                fugit voluptatibus rem laborum tempore perspiciatis cumque
+                suscipit, velit sapiente quia, exercitationem distinctio
+                delectus esse, cum illo dolore aspernatur dicta? Doloribus.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="sliderText">
+              <h3>Slide Two</h3>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                fugit voluptatibus rem laborum tempore perspiciatis cumque
+                suscipit, velit sapiente quia, exercitationem distinctio
+                delectus esse, cum illo dolore aspernatur dicta? Doloribus.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="sliderText">
+              <h3>Slide Three</h3>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                fugit voluptatibus rem laborum tempore perspiciatis cumque
+                suscipit, velit sapiente quia, exercitationem distinctio
+                delectus esse, cum illo dolore aspernatur dicta? Doloribus.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="sliderText">
+              <h3>Slide Four</h3>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                fugit voluptatibus rem laborum tempore perspiciatis cumque
+                suscipit, velit sapiente quia, exercitationem distinctio
+                delectus esse, cum illo dolore aspernatur dicta? Doloribus.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="sliderText">
+              <h3>Slide Five</h3>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                fugit voluptatibus rem laborum tempore perspiciatis cumque
+                suscipit, velit sapiente quia, exercitationem distinctio
+                delectus esse, cum illo dolore aspernatur dicta? Doloribus.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="sliderText">
+              <h3>Slide Six</h3>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                fugit voluptatibus rem laborum tempore perspiciatis cumque
+                suscipit, velit sapiente quia, exercitationem distinctio
+                delectus esse, cum illo dolore aspernatur dicta? Doloribus.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 150,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+  </body>
+</html>
