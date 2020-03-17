@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.container div {
+  position: relative;
+  display: block;
+  float: left;
+  width: 20%;
+  height: 21vh;
+}
+
+.container div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(51, 104, 218), rgb(180, 88, 241));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transform: perspective(1100px) rotateX(0deg) translateY(0);
+  transition: 0.5s linear;
+}
+
+.container div.flip:before {
+  transform: perspective(1100px) rotateX(90deg) translateY(-50%);
+}
+
+.container div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, purple, pink);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  transform: perspective(1100px) rotateX(-90deg) translateY(50%);
+  transition: 0.5s linear;
+}
+
+.container div.flip:after {
+  transform: perspective(1100px) rotateX(0deg) translateY(0);
+}
